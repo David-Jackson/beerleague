@@ -34,7 +34,7 @@ CREATE TABLE `drinkers` (
 --
 
 INSERT INTO `drinkers` (`id`, `name`, `retired`) VALUES
-('123', 'Drinker 1', 1),
+('123', 'Kiran', 1),
 ('124', 'Drinker 2', 1),
 ('125', 'Drinker 3', 0),
 ('126', 'Drinker 4', 0),
