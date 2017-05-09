@@ -5,7 +5,7 @@ Why split the tab when there's an app for that?
 The frontend of the beerleague uses HTML, Javascript, and CSS. It utilizes a framework called [Materialize](http://materializecss.com/) for the material design style. Javascript is used to parse the drinkers and trips data to calculate who's next to pay, the current standings, and the leaderboard.
 
 ### Process
-1. Backend script ([get_drinkers.php](scripts/php/get_drinkers.php) and [get_trips.php](scripts/php/get_trips.php)) loads drinkers and trips from MySQL tables into drinkers and trips variables in Javascript.
+1. Backend script ([get_drinkers.php](scripts/php/get_drinkers.php) and [get_trips.php](scripts/php/get_trips.php)) loads drinkers and trips from MySQL tables into ```drinkers``` and ```trips``` variables in Javascript.
 2. The ```summarize()``` function is then called. This calculates metrics for each drinker that is stored in the ```summary``` variable.
 ```javascript
 summary = {
@@ -23,9 +23,9 @@ summary = {
 };
 ```
 3. After ```summary``` is calculated, the following functions are called:
-  - ```showWhosNext();``` inserts the first card on the webpage showing who is next to pay.
-  - ```showStandings();``` inserts the second card with a table of the current standings.
-  - ```showLeaderboard();``` inserts the third card with a table of the leaderboard.
+    * ```showWhosNext();``` inserts the first card on the webpage showing who is next to pay.
+    * ```showStandings();``` inserts the second card with a table of the current standings.
+    * ```showLeaderboard();``` inserts the third card with a table of the leaderboard.
 
 
 ## Backend
